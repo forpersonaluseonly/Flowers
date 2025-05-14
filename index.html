@@ -6,6 +6,21 @@
     <title>Flowers for you</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <style>
+      .flowers-text {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5vmin;
+        font-weight: bold;
+        color: white;
+        z-index: 99; /* Ensure it is behind the flowers */
+        pointer-events: none;
+        opacity: 0; /* Hide text initially */
+        transition: opacity 10s ease-in-out;
+      }
+    </style>
   </head>
   <!--  
  
