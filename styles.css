@@ -12,9 +12,9 @@
 
 .flowers-text {
   position: absolute;
-  align-items: center;
-  justify-content: center;
-  /* transform: translate(-50%, -50%); */
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 5vmin;
   font-weight: bold;
   color: white;
