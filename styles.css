@@ -10,6 +10,23 @@
   --dark-color: #000;
 }
 
+.flowers-text {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  /* transform: translate(-50%, -50%); */
+  font-size: 5vmin;
+  font-weight: bold;
+  color: white;
+  z-index: 99; /* Ensure it is behind the flowers */
+  pointer-events: none;
+  opacity: 0; /* Hide text initially */
+  transition: opacity 10s ease-in-out;
+}
+
+body:not(.not-loaded) .flowers-text {
+  opacity: 1; /* Show text when flowers are visible */
+}
 body {
   display: flex;
   align-items: flex-end;
